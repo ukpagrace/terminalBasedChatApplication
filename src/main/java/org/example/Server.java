@@ -2,10 +2,11 @@ package org.example;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Server {
-    public static CopyOnWriteArrayList<String> users = new CopyOnWriteArrayList<>();
+//    private ArrayList<ClientHandler> allUsers = new ArrayList<>();
     private ServerSocket serverSocket;
 
     public Server(ServerSocket serverSocket){
